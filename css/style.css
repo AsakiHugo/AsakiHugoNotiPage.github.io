@@ -1,0 +1,233 @@
+/* google fonts (Plus Jakarta Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+/* fixed css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* re-usable css */
+:root {
+    /* Primary color */
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+
+    /* font-weight */
+    --w5: 500;
+    --w8: 800;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    background-color: var(--Very-light-grayish-blue);
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* main card */
+.noti-container {
+    width: 760px;
+    height: min-content;
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    padding: 20px 40px;
+    background-color: var(--White);
+}
+
+/* header */
+.notification {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.notification  .noti-text {
+    font-size: 32px;
+    font-weight: var(--w8);    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--Very-dark-blue);
+}
+
+.notification  .noti {
+    font-size: 24px;
+    font-weight: var(--w8);
+    padding: 5px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: var(--White);
+    background-color: var(--Blue);
+}
+
+.notification  .noti-readed {
+    font-size: 24px;
+    font-weight: var(--w5);
+    cursor: pointer;
+    color: var(--Grayish-blue);
+}
+
+.notification  .noti-readed:hover {
+    color: var(--Blue);
+}
+
+/* history container */
+.chat-area-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.chat-area-container .chat-history {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px 20px;
+    color: var(--Grayish-blue);
+}
+
+.chat-area-container .chat-history-special {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--Grayish-blue);
+}
+
+.chat-area-container .chat-history-special-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px 20px;
+    color: var(--Grayish-blue);
+}
+
+.chat-area-container .unseen {
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.chat-history-special .person-img,
+.chat-history .person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-history-special .person-img-solo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.chat-history .noti-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.chat-history-special .user-name,
+.chat-history .user-name {
+    font-size: 17px;
+    font-weight: var(--w8);    
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+.chat-history-special .special-noti,
+.chat-history .special-noti {
+    font-size: 17px;
+    font-weight: var(--w8);
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+}
+
+.chat-history-special .user-name:hover,
+.chat-history-special .special-noti:hover,
+.chat-history .user-name:hover,
+.chat-history .special-noti:hover {
+    color: var(--Blue);
+}
+
+.chat-history .new {
+    font-size: 0px;
+    color: var(--Red);
+}
+
+.chat-history .status {
+    color: var(--Grayish-blue);
+}
+
+.my-chat {
+    width: 85%;
+    margin: 10px 0 30px;
+    border-radius: 10px;
+    border: 2px solid var(--Light-grayish-blue-2);
+    padding: 15px 20px;
+    cursor: pointer;
+    color: var(--Grayish-blue);
+    background-color: var(--White);
+}
+
+li:nth-of-type(5) {
+    align-self: flex-end;
+}
+
+.my-chat:hover {
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.attribution {
+    font-size: 24px;
+}
+
+.attribution a {
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--w8);
+}
+
+.attribution a:hover {
+    color: var(--Blue);
+}

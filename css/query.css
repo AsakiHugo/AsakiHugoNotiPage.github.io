@@ -1,0 +1,52 @@
+/* media query */
+@media (max-width: 800px) {
+    .noti-container {
+        width: 580px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+    }
+    .noti-container {
+        width: 490px;
+        padding: 20px 40px;
+    }
+    .notification  .noti-text {
+        font-size: 24px;
+    }
+    .notification  .noti {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .notification  .noti-readed {
+        font-size: 18px;
+    }
+    .attribution {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        gap: 20px;
+    }
+    .noti-container {
+        width: 100vw;
+        padding: 10px 20px;
+        border-radius: 0px;
+    }
+    .notification  .noti-text {
+        font-size: 20px;
+    }
+    .notification  .noti {
+        font-size: 16px;
+    }
+    .notification  .noti-readed {
+        font-size: 16px;
+    }
+    .attribution {
+        font-size: 14px;
+    }
+}
